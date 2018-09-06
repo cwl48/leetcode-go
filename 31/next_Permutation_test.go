@@ -1,4 +1,4 @@
-package nextPermutation
+package nextpermutation
 
 import "testing"
 

@@ -5,6 +5,33 @@ import (
 )
 
 /*
+ * [15] 3Sum
+ *
+ * https://leetcode-cn.com/problems/3sum/description/
+ *
+ * algorithms
+ * Medium (15.53%)
+ * Total Accepted:    11.9K
+ * Total Submissions: 76.6K
+ * Testcase Example:  '[-1,0,1,2,-1,-4]'
+ *
+ * 给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0
+ * ？找出所有满足条件且不重复的三元组。
+ *
+ * 注意：答案中不可以包含重复的三元组。
+ *
+ * 例如, 给定数组 nums = [-1, 0, 1, 2, -1, -4]，
+ *
+ * 满足要求的三元组集合为：
+ * [
+ * ⁠ [-1, 0, 1],
+ * ⁠ [-1, -1, 2]
+ * ]
+ *
+ *
+ */
+
+/*
 	写下思路
 	要从一个数组中获取三个数，使得x+y+z=0
 	先对数组排序，for循环遍历数组，用0-nums【i】得到sum

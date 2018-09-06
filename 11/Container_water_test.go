@@ -1,4 +1,4 @@
-package ContainerWater
+package containerwater
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package removeDuplicates
+package removeduplicates
 
 import "testing"
 
