@@ -1,4 +1,4 @@
-package medianOf
+package medianof
 
 import "testing"
 

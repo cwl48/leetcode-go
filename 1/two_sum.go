@@ -17,14 +17,12 @@ package twoSum
 //时间复杂度小的 O(n)
 func twoSum(nums []int, target int) []int {
 
-	arr := []int{}
 	container := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		if xy, ok := container[target-nums[i]]; ok && xy != i {
-			arr = []int{container[target-nums[i]], i}
-			return arr
+			return []int{container[target-nums[i]], i}
 		}
 		container[nums[i]] = i
 	}
-	return arr
+	return nil
 }
