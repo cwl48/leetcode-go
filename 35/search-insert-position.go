@@ -44,18 +44,18 @@ package searchinsertposition
  */
 func searchInsert(nums []int, target int) int {
 
-	left, right, mid := 0, len(nums)-1, 0
-	for left <= right {
-		mid = (left + right) / 2
+	low, high, mid := 0, len(nums)-1, 0
+	for low <= high {
+		mid = low + (high-low)/2
 
 		// 相等则直接返回
 		if nums[mid] == target {
 			return mid
 		} else if nums[mid] > target {
-			right = mid - 1
+			high = mid - 1
 		} else {
-			left = mid + 1
+			low = mid + 1
 		}
 	}
-	return left
+	return low
 }
