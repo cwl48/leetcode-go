@@ -34,16 +34,17 @@ package jumpgameli
  */
 func jump(nums []int) int {
 
-	var l, r = 0, 0
+	r := 0
 	maxR := 0
 	ans := 0
 
+	// 贪心
+	// 
 	for r < len(nums)-1 {
-		for i := l; i <= r; i++ {
+		for i := ans; i <= r; i++ {
 			maxR = max(maxR, i+nums[i])
 		}
 		ans++
-		l++
 		r = maxR
 	}
 	return ans
