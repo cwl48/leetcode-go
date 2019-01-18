@@ -72,7 +72,7 @@ func setZeroes(matrix [][]int) {
 	}
 
 	for i := x - 1; i >= 0; i-- {
-		for j := y - 1; j >= 0; j-- {
+		for j := y - 1; j >= 1; j-- {
 			if matrix[i][0] == 0 || matrix[0][j] == 0 {
 				matrix[i][j] = 0
 			}
